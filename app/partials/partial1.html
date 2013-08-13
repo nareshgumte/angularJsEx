@@ -1,0 +1,11 @@
+<p>This is the partial for view 1.</p>
+{{ names }}
+<body ng-controller="MyCtrl1">
+    <h4>Users List</h4><hr/>
+    <ul>
+        <li ng-repeat="user in users">
+            
+            {{user.id}} - {{user.name}} - <img src="{{user.image}}" lazy-src="{{user.image}}" /> 
+        </li>
+    </ul>
+</body>
